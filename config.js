@@ -16,16 +16,16 @@ const DEBUG = convertToBool(process.env.DEBUG, 'true');
 
 module.exports = {
   VERSION: 'v4.4.5',
-  SESSION_ID: process.env.SESSION_ID || '',
+  SESSION_ID: process.env.SESSION_ID || 'HP_2025_MAR_12_HJ28E7',
   MODE: (process.env.MODE || 'private').toLowerCase(),
-  HANDLERS: (process.env.PREFIX || '^[.,!]').trim(),
+  HANDLERS: (process.env.PREFIX || '^[!]').trim(),
   SEND_READ: toBool(process.env.READ_COMMAND),
   READ_MSG: toBool(process.env.READ_MSG),
   MSG_LOG: convertToBool(process.env.LOG_MSG),
   BLOCKCHAT: process.env.BLOCK_CHAT || false,
   LANG: (process.env.LANGUAGE || 'EN').toUpperCase(),
   ALWAYS_ONLINE: toBool(process.env.ALWAYS_ONLINE),
-  BOT_NAME: process.env.BOT_NAME || 'ʜᴇʀᴍɪᴛ',
+  BOT_NAME: process.env.BOT_NAME || 'DRAGON-MD',
   AUTOMUTE_MSG: process.env.AUTOMUTE_MSG || '_Group automuted!_\n_(Change this by setting var AUTOMUTE_MSG)_',
   AUTOUNMUTE_MSG: process.env.AUTOUNMUTE_MSG || '_Group autounmuted!_\n_(Change this by setting var AUTOUNMUTE_MSG)_',
   ANTILINK_MSG: process.env.ANTILINK_MSG || '_Link Not Allowed!_\n_(Change this by setting var ANTILINK_MSG)_',
@@ -64,6 +64,6 @@ module.exports = {
       }),
   RBG_API_KEY: process.env.REMOVE_BG_API_KEY || false,
   BRAIN_ID: process.env.BRAIN_ID || 'bid=168613&key=EfbnX54Iy9PFIFp3',
-  SUDO: process.env.SUDO || '0,0',
+  SUDO: process.env.SUDO || '916235141427',
   DEBUG: DEBUG
 };
